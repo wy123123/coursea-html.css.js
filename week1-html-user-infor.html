@@ -12,16 +12,36 @@ width :720px;
 }
 
 label:hover 
-{ font-size:40px }
+{ font-size:20px }
 input:hover 
-{ font-size:40px }
+{ font-size:20px }
 
 #tt{
 width:auto;
 }
+
 #t2{
 vertical-align: top;
 }
+
+#t3{
+color: white;
+text-align: center;
+width:48px;
+height:25px;
+background:red;
+background-position: center;
+}
+
+#t4{
+vertical-align: center;
+color: white;
+text-align: center;
+width:48px;
+height:25px;
+background:purple;
+}
+
 label{
 width:180px;
 display: inline-block;
@@ -34,7 +54,9 @@ text-align:center;
 width:360px;
 height:50px;
 }
+#preview{
 
+}
 </style>
 
 </head>
@@ -47,9 +69,9 @@ height:50px;
 <fieldset>
 <legend> Your Face</legend>
 <label>Your image: </label>
-<input id = "preview" type="file" name = "preview" required>
-</br><label>Image preview:</label>
-<img id = "preview" src="">
+<input id="preivew" type="file" required>
+</br><label ">Image preview:</label>
+<img id = "preview" width = "100px" height="100px">
 </fieldset>
 
 <!--General Information field-->
@@ -80,10 +102,14 @@ height:50px;
 <!-- Indicator field -->
 <fieldset>
 <legend> Your Indicator</legend>
-<label id= "t2">Height:</label>Short 
-<input id= "t2" type="range" name="Height" min="0" max="100">Tall
-</br><label id= "t2">Salary:</label>Poor 
-<input id= "t2" type="range" name="Salary" min="0" max="100">Rich
+<label id= "t2">Height:</label>
+<label id = "t3" >Short</label> 
+<input id= "t2" type="range" name="Height" min="0" max="100">
+<label id = "t4" >Tall</label> 
+</br><label id= "t2">Salary:</label>
+<label id = "t3" >Poor </label> 
+<input id= "t2" type="range" name="Salary" min="0" max="100">
+<label id = "t4" >Rich</label> 
 </fieldset>
 
 <!-- Contact field-->
@@ -97,7 +123,7 @@ height:50px;
 <textarea rows="4" cols="25"></textarea>
 </br><label>Method to contact you:</label>
 <input id = "tt" type="checkbox" name="contact_method" value="email">Email
-<input id = "tt" type="checkbox" name="contact_method" value="whats-app"> Whats-app
+<input id = "tt" type="checkbox" name="contact_method" value="whats-app">Whats-app
 <input id = "tt" type="checkbox" name="contact_method" value="in_app_chat">In-app chat
 </fieldset>
 <input type="submit" value="Submit">
